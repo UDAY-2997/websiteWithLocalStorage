@@ -7,24 +7,30 @@
   margin-inline: auto;
 }
 
+:root {
+  --app-blue: #0d5c7f;
+}
+
 body {
-  background-color: #14161d;
+  background-color: #f6f7f9;
 }
 
 /* HEADER */
 
 header {
-  background-color: #1f2229;
+  background-color: #fff;
 }
 
 header .flex {
   display: flex;
   justify-content: space-between;
+  align-items: center;
+  text-align: center;
 }
 
 .head-1 h1 {
   font-size: 25px;
-  color: #2993ff;
+  color: var(--app-blue);
   font-weight: 600;
   line-height: 49px;
   letter-spacing: 0.6px;
@@ -47,7 +53,7 @@ nav ul li a {
   display: block;
   padding: 13px 16px;
   text-align: center;
-  color: #f0f1ff;
+  color: #0d5c7f;
   font-size: 15px;
   letter-spacing: 0.6px;
   text-decoration: none;
@@ -57,7 +63,22 @@ nav ul li a {
 nav ul li a:hover,
 a:focus,
 a:active {
-  background-color: #2993ff;
+  color: #fff;
+  background-color: var(--app-blue);
+}
+
+input[type="text"] {
+  border: 1px solid #0d5c7f;
+  border-radius: 50px;
+  padding: 8px 0px 8px 13px;
+  font-size: 14px;
+  font-weight: 40;
+  color: #fff;
+  background: rgb(250 250 250 / 0.15) url(../images/search.png) no-repeat 155px
+    45%;
+  background-size: 15px;
+  transition: border-color 0.25 ease-in-out;
+  display: inline;
 }
 
 .icon-1 {
@@ -70,7 +91,7 @@ a:active {
   width: 40px;
   border-radius: 50%;
   float: left;
-  margin-right: 10px;
+  /* margin-right: 10px; */
 }
 
 /* HEADER ENDS */
@@ -86,7 +107,7 @@ a:active {
   flex-direction: column;
   justify-content: center;
   border-radius: 5px;
-  background-color: #1f2229;
+  background-color: #fff;
   margin-bottom: 3rem;
 }
 
@@ -107,7 +128,7 @@ a:active {
   text-align: center;
   padding: 8px 20px;
   border-radius: 5px;
-  background-color: #2993ff;
+  background-color: #0d5c7f;
   font-size: 16px;
   color: #fff;
   cursor: pointer;
@@ -155,6 +176,11 @@ span {
   margin: 15px 0px;
   font-size: 16px;
   font-weight: 400;
+}
+
+.fa-image:before {
+  content: "\f03e";
+  color: #0d5c7f;
 }
 
 #upload-file {
