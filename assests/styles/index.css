@@ -98,9 +98,44 @@ input[type="text"] {
 
 /* MAIN */
 
-#form {
-  width: 600px;
+#page {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  gap: 10px;
+  margin: 0 auto;
+}
+
+.box {
+  width: 200px;
   height: auto;
+  border-radius: 5px;
+}
+
+#center-box {
+  flex-grow: 1;
+  flex-shrink: 0;
+}
+
+#left-box {
+  height: auto;
+  width: 200px;
+  background-color: #fff;
+  margin: 30px auto 0;
+  padding: 20px;
+}
+
+#right-box {
+  height: auto;
+  width: 200px;
+  background-color: #fff;
+  margin: 30px auto 0;
+  padding: 20px;
+}
+
+#form {
+  /* width: 600px;
+  height: auto; */
   margin: 30px auto 0;
   padding: 20px;
   display: flex;
@@ -116,7 +151,6 @@ input[type="text"] {
   font-size: 16px;
   background-color: transparent;
   resize: none;
-  color: #fff;
 }
 
 #content {

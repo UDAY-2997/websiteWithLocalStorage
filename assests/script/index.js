@@ -123,7 +123,7 @@ function addContent(newdiv) {
 
   const logoImg = document.createElement("img");
   logoImg.classList.add("img");
-  logoImg.src = "./assets/images/logo.png";
+  logoImg.src = "./assests/images/logo.png";
 
   const companyName = document.createElement("span");
   const companyNameText = document.createTextNode("U-dev");
