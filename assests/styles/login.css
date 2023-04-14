@@ -6,10 +6,6 @@ input::-webkit-inner-spin-button {
   margin: 0;
 }
 
-input[type="number"] {
-  -moz-appearance: textfield;
-}
-
 :root {
   --app-blue: #0d5c7f;
   --app-blue-hover: #364ee6;
@@ -30,7 +26,7 @@ html {
 
 body {
   height: 100vh;
-  background-image: url(../images/bg1.jpg);
+  background: url(../images/bg1.jpg) no-repeat center center / cover;
   display: grid;
   align-items: center;
 }
@@ -101,7 +97,7 @@ p {
 }
 
 input {
-  width: 100%;
+  width: 400px;
   border: 1px solid #0d5c7f;
   outline: none;
   padding: 8px;
@@ -119,7 +115,7 @@ label {
 
 .btn {
   display: flex;
-  gap: 20px;
+  gap: 30px;
 }
 
 .btn-1 {
@@ -172,6 +168,7 @@ tr td {
 }
 
 .social {
+  width: 400px;
   display: flex;
   justify-content: space-between;
 }
@@ -211,11 +208,11 @@ tr td {
 @media (max-width: 768px) {
   .contact {
     flex-direction: column;
-    gap: 40px;
+    gap: 20px;
   }
 
-  #row {
-    flex-direction: column;
+  .contact-right {
+    display: none;
   }
 }
 
@@ -228,8 +225,5 @@ tr td {
   }
   .end p {
     font-size: 16px;
-  }
-  .card {
-    margin: 0px;
   }
 }
