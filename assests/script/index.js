@@ -33,6 +33,8 @@ function saveData() {
     console.log("Logged in");
     window.location.href = "home.html";
   } else {
-    console.log("Loggin error");
+    console.log("Login error");
+    const errorElement = document.getElementById("error-message");
+    errorElement.textContent = "Invalid email or password. Please try again.";
   }
 }
