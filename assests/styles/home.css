@@ -3,7 +3,7 @@
 /* CONTAINER */
 
 .container {
-  width: min(100% - 30px, 1080px);
+  width: min(100% - 21px, 1080px);
   margin-inline: auto;
 }
 
@@ -177,42 +177,39 @@ a:active {
   width: 200px;
   background-color: #fff;
   margin: 30px auto 0;
-  padding: 20px;
+  padding: 10px;
 }
 
-#form {
-  margin: 30px auto 0;
-  padding: 20px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-  border-radius: 5px;
-  background-color: #fff;
-  margin-bottom: 3rem;
+.box h3 {
+  text-align: center;
+  margin-bottom: 10px;
 }
 
 .user-profile {
-  background: #fff;
-  border-radius: 5px;
-  margin: 10px auto 0;
-  padding: 20px 30px 0px;
   display: flex;
   flex-direction: row;
   align-items: center;
+  gap: 5px;
   justify-content: space-between;
+  margin-bottom: 20px;
+  background-color: #f6f7f9;
+  padding: 5px;
+  border-radius: 5px;
 }
 
 .user-profile img {
   width: 100%;
-  max-width: 100px;
+  max-width: 70px;
   border-radius: 50%;
-  margin-bottom: 20px;
 }
 
-.user-profile .fullname {
-  font-size: 24px;
+.user-profile .name {
+  font-size: 14px;
   font-weight: bold;
-  margin: 20px 0px 40px;
+}
+
+.user-profile .city {
+  font-size: 14px;
 }
 
 .user-profile .description {
@@ -238,63 +235,173 @@ a:active {
   font-weight: 500;
 }
 
-#right-box {
-  height: 100%;
-  width: 200px;
-  text-align: center;
-  background-color: #fff;
+#form {
+  width: 600px;
+  height: auto;
   margin: 30px auto 0;
-  padding: 20px;
-}
-
-.right-box {
+  padding: 20px 10px;
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-direction: column;
-  gap: 10px;
-}
-
-.titular {
-  margin-bottom: 10px;
-}
-
-.input-container input[type="text"] {
-  width: 162px;
-  border: 1px solid #0d5c7f;
+  justify-content: center;
   border-radius: 5px;
-  padding: 8px 0px 8px 41px;
-  font-size: 14px;
-  color: #fff;
-  background: rgb(250 250 250 / 0.15) url(../images/email.png) no-repeat 10px
-    48%;
-  background-size: 18px;
-  transition: border-color 0.25 ease-in-out;
-  display: inline;
+  background-color: #fff;
 }
 
-.subscribe.button {
-  background: #0d5c7f;
-  margin-top: 10px;
-  color: #fff;
-  text-decoration: none;
-}
-
-.button {
-  display: block;
-  width: 130px;
-  line-height: 44px;
+#textarea {
+  letter-spacing: 0.4px;
   font-size: 16px;
-  font-weight: 700;
+  background-color: transparent;
+  resize: none;
+  color: #000;
+}
+
+#content {
+  display: flex;
+  justify-content: space-between;
+}
+
+#submit-file {
   text-align: center;
-  margin: 0 auto;
+  padding: 8px 20px;
   border-radius: 5px;
-  transition: background 0.3s;
+  background-color: #0d5c7f;
+  font-size: 16px;
+  color: #fff;
+  cursor: pointer;
+}
+
+.strong-p {
+  font-weight: bold;
+}
+
+span {
+  font-size: 16px;
+}
+
+/* #post-area {
+  border-radius: 5px;
+  display: grid;
+  justify-content: center;
+  align-items: center;
+  gap: 3rem;
+} */
+
+.post {
+  width: 600px;
+  min-height: 110px;
+  height: fit-content;
+  padding: 20px 10px;
+  color: #000;
+  background-color: #fff;
+  border-radius: 5px;
+  margin-top: 20px;
+}
+
+.postHead {
+  display: flex;
+  justify-content: space-between;
+  line-height: 40px;
+  font-size: 17px;
+  letter-spacing: 0.2px;
+}
+
+.postHead img {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  float: left;
+  margin-right: 10px;
+}
+
+.postBody {
+  margin: 15px 0px;
+  font-size: 16px;
+  font-weight: 400;
+}
+
+#upload-file {
+  display: none;
+}
+
+.upload-file {
+  padding-top: 8px;
+  cursor: pointer;
+}
+
+.upload-file i {
+  font-size: 30px;
+}
+
+.icon-1:focus #account-info {
+  display: block;
+}
+
+.icon-1 #account-info {
+  display: none;
+  position: absolute;
+  background-color: #3c3f4b;
+  padding: 10px;
+  min-width: 200px;
+  top: 80px;
+  right: 85px;
+  color: #fff;
+  font-size: 16px;
+  border-radius: 5px;
 }
 
 /* MAIN ENDS */
 
 /* MEDIA QUERIES */
+@media screen and (max-width: 768px) {
+  .container {
+    width: 100%;
+    margin: 0 15px;
+  }
+  #form {
+    width: 90%;
+    padding: 10px;
+  }
+  .post {
+    width: 90%;
+  }
+  .icon-1 #account-info {
+    top: 60px;
+    right: 10px;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .head-1 h1 {
+    font-size: 16px;
+    line-height: 30px;
+  }
+
+  nav ul li a {
+    font-size: 12px;
+    padding: 8px 10px;
+  }
+
+  .postHead,
+  .icon-1 img {
+    height: 20px;
+    width: 20px;
+  }
+
+  #form {
+    width: 90%;
+    padding: 8px;
+  }
+
+  .post {
+    width: 100%;
+  }
+
+  .icon-1 #account-info {
+    top: 40px;
+    right: -30px;
+  }
+}
+
 @media screen and (max-width: 768px) {
   .container {
     width: 100%;

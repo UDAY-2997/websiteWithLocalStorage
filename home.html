@@ -28,7 +28,7 @@
     <header>
       <div class="container flex">
         <div class="head-1">
-          <h1>Join-C</h1>
+          <img src="./assests/images/logo-m.png" />
         </div>
         <nav>
           <ul>
@@ -64,23 +64,63 @@
             </div>
           </div>
           <div id="center-box" class="box">
-            <div id="users"></div>
+            <div class="container">
+              <div id="form">
+                <textarea
+                  name="textarea"
+                  id="textarea"
+                  rows="6"
+                  placeholder="What's going on, Uday?"
+                ></textarea>
+                <div id="content">
+                  <label for="upload-file" class="upload-file">
+                    <i class="fa-solid fa-image"></i>
+                    <span id="file-name"></span>
+                  </label>
+                  <input type="file" name="upload-file" id="upload-file" />
+                  <button id="submit-file">Post</button>
+                </div>
+              </div>
+              <div id="post-area">
+                <div class="post">
+                  <div class="postHead">
+                    <img class="img" src="./assests/images/logo.png" />
+                    <span><strong>Uday Veer Singh</strong></span>
+                    <p>Apr 15, 2023</p>
+                  </div>
+                  <div class="postBody">
+                    <span class="strong-p"> Welcome note! </span>
+                    <p>
+                      "Join us and unlock your full potential with a company
+                      that values your unique talents and empowers you to grow
+                      and succeed."
+                    </p>
+                  </div>
+                  <img src="./assests/images/bg.jpg" alt="" />
+                </div>
+              </div>
+              <div id="post-area">
+                <div class="post">
+                  <div class="postHead">
+                    <img class="img" src="./assests/images/logo.png" />
+                    <span><strong>Uday Veer Singh</strong></span>
+                    <p>Apr 12, 2023</p>
+                  </div>
+                  <div class="postBody">
+                    "Join us and unlock your full potential with a company that
+                    values your unique talents and empowers you to grow and
+                    succeed."
+                  </div>
+                  <img src="./assests/images/.png" alt="" />
+                </div>
+              </div>
+              <div id="post-area"></div>
+            </div>
           </div>
 
           <div id="right-box" class="box">
-            <div class="right-box">
-              <div class="join-newsletter block">
-                <h2 class="titular">JOIN THE NEWSLETTER</h2>
-                <div class="input-container">
-                  <input
-                    type="text"
-                    placeholder="xyz@gmail.com"
-                    class="email text-input"
-                  />
-                </div>
-                <a class="subscribe button" href="#21">SUBSCRIBE</a>
-              </div>
-            </div>
+            <h3>Friend list</h3>
+            <div id="users"></div>
           </div>
         </div>
       </div>

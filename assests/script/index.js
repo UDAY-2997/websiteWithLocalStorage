@@ -31,7 +31,7 @@ function saveData() {
     })
   ) {
     console.log("Logged in");
-    window.location.href = "index.html";
+    window.location.href = "home.html";
   } else {
     console.log("Loggin error");
   }
