@@ -250,9 +250,12 @@ a:active {
 #textarea {
   letter-spacing: 0.4px;
   font-size: 16px;
-  background-color: transparent;
+  background-color: #f6f7f9;
   resize: none;
   color: #000;
+  padding: 10px;
+  border-radius: 5px;
+  margin-bottom: 15px;
 }
 
 #content {
@@ -303,6 +306,9 @@ span {
   line-height: 40px;
   font-size: 17px;
   letter-spacing: 0.2px;
+  background-color: #f6f7f9;
+  padding: 10px;
+  border-radius: 5px;
 }
 
 .postHead img {
@@ -317,6 +323,10 @@ span {
   margin: 15px 0px;
   font-size: 16px;
   font-weight: 400;
+}
+
+.post img {
+  border-radius: 5px;
 }
 
 #upload-file {
