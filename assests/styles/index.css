@@ -173,14 +173,14 @@ tr td {
 }
 
 .social {
-  width: 400px;
+  width: 264px;
   display: flex;
   justify-content: space-between;
 }
 
 .social a {
-  width: 42px;
-  height: 39px;
+  width: 35px;
+  height: 33px;
   display: flex;
   align-items: center;
   justify-content: center;
@@ -194,9 +194,8 @@ tr td {
 }
 
 .social a:hover {
-  transform: scale(1.3);
+  transform: scale(1.1);
   transition: 0.3s ease-in-out;
-  color: #fff;
 }
 
 /* RESPONSIVE */

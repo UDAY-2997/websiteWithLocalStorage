@@ -361,6 +361,53 @@ span {
 
 /* MAIN ENDS */
 
+/* FOOTER */
+
+footer {
+  position: absolute;
+  width: 100%;
+  background-color: #fff;
+}
+
+footer .flex {
+  display: flex;
+  justify-content: space-between;
+}
+.social {
+  display: flex;
+  justify-content: space-between;
+}
+
+.social a {
+  width: 35px;
+  height: 33px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: var(--app-blue);
+  border-radius: 50%;
+  margin: 13px 10px;
+  color: #fff;
+  text-decoration: none;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  line-height: 55px;
+}
+
+.social a:hover {
+  transform: scale(1.1);
+  transition: 0.3s ease-in-out;
+}
+
+.end {
+  line-height: 75px;
+  font-size: 20px;
+  letter-spacing: 0.4px;
+  font-weight: 400;
+}
+
+/* FOOTER ENDS */
+
 /* MEDIA QUERIES */
 @media screen and (max-width: 768px) {
   .container {
