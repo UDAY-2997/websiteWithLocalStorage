@@ -1,5 +1,3 @@
-"use strict";
-
 const mediaRun = new IntersectionObserver((views) => {
   views.forEach((view) => {
     if (view.isIntersecting) {
@@ -17,9 +15,9 @@ const mediaElements2 = document.querySelectorAll(".page3-box-1");
 mediaElements2.forEach((e) => mediaRun.observe(e));
 
 function saveData() {
-  let email, psw;
+  let email, password;
   email = document.getElementById("email").value;
-  psw = document.getElementById("password").value;
+  password = document.getElementById("password").value;
 
   let user_records = new Array();
   user_records = JSON.parse(localStorage.getItem("users"))
@@ -27,7 +25,7 @@ function saveData() {
     : [];
   if (
     user_records.some((v) => {
-      return v.email == email && v.psw == psw;
+      return v.email == email && v.password == password;
     })
   ) {
     console.log("Logged in");
